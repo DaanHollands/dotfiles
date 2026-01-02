@@ -1,0 +1,37 @@
+// Keybind
+binds {
+    // Media Keys
+    XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+    XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
+    XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
+    XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
+
+    // Window Management
+    Mod+W repeat=false { close-window; }
+    Mod+O repeat=false { toggle-overview; }
+    Mod+Tab { focus-workspace-previous; }
+    Mod+Q { toggle-column-tabbed-display; }
+
+    Mod+Down      { focus-workspace-down; }
+    Mod+Up        { focus-workspace-up; }
+    Mod+J         { focus-workspace-down; }
+    Mod+k         { focus-workspace-up; }
+
+    Mod+Ctrl+Down { move-column-to-workspace-down; }
+    Mod+Ctrl+Up   { move-column-to-workspace-up; }
+    Mod+Ctrl+J    { move-column-to-workspace-down; }
+    Mod+Ctrl+K    { move-column-to-workspace-up; }
+
+    // Application Shortcuts
+    Mod+Return hotkey-overlay-title="Spawn Terminal: Ghostty" { spawn "ghostty"; }
+    Mod+D hotkey-overlay-title="Spawn File Manager: Yazi" { spawn "ghostty" "-e" "/home/linuxbrew/.linuxbrew/bin/yazi"; }
+    Mod+Space hotkey-overlay-title="Application Launcher" { spawn "vicinae" "toggle"; }
+    Mod+V hotkey-overlay-title="Clipboar History" { spawn "vicinae" "vicinae://extensions/vicinae/clipboard/history"; }
+    Mod+Escape hotkey-overlay-title="Power Management" { spawn "vicinae" "vicinae://extensions/vicinae/power"; }
+
+    // Overwrites from dms
+    Mod+T hotkey-overlay-title=null { spawn ""; }
+    Mod+Comma hotkey-overlay-title=null { spawn ""; }
+    Mod+Y hotkey-overlay-title=null { spawn ""; }
+    Mod+Shift+N hotkey-overlay-title=null { spawn ""; }
+}

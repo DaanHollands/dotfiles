@@ -1,0 +1,29 @@
+output "eDP-1" {
+    mode "2560x1440@165.00"
+
+    scale 1.5
+
+    transform "normal"
+
+    position x=0 y=0
+}
+
+output "LG Electronics LG ULTRAGEAR 305MAZV8YU37" {
+    mode "2560x1440@119.998"
+
+    scale 1.15
+
+    transform "normal"
+
+    position x=1707 y=-146
+}
+
+output "Mega System Technologies Inc MD20581 Unknown" {
+    mode "1920x1080@74.973"
+
+    scale 1
+
+    transform "normal"
+
+    position x=3933 y=-60
+}

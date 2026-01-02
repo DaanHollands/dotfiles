@@ -1,0 +1,37 @@
+// Work around WezTerm's initial configure bug
+// by setting an empty default-column-width.
+window-rule {
+    // This regular expression is intentionally made as specific as possible,
+    // since this is the default config, and we want no false positives.
+    // You can get away with just app-id="wezterm" if you want.
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
+}
+
+// Open the Firefox picture-in-picture player as floating by default.
+window-rule {
+    // This app-id regular expression will work for both:
+    // - host Firefox (app-id is "firefox")
+    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+window-rule {
+    match app-id="steam"
+    open-on-output "LG Electronics LG ULTRAGEAR 305MAZV8YU3"
+    open-floating true
+}
+
+window-rule {
+    match title="^Steam$" app-id="steam"
+    open-maximized true
+    open-floating false
+    open-on-output "LG Electronics LG ULTRAGEAR 305MAZV8YU3"
+}
+
+window-rule{
+    match app-id=r"^steam_app_[0-9]+$"
+    open-on-output "LG Electronics LG ULTRAGEAR 305MAZV8YU3"
+    open-fullscreen true
+}
