@@ -24,7 +24,7 @@ binds {
 
     // Application Shortcuts
     Mod+Return hotkey-overlay-title="Spawn Terminal: Ghostty" { spawn "ghostty"; }
-    Mod+D hotkey-overlay-title="Spawn File Manager: Yazi" { spawn "ghostty" "-e" "/home/linuxbrew/.linuxbrew/bin/yazi"; }
+    Mod+D hotkey-overlay-title="Spawn File Manager: Yazi" { spawn "ghostty" "--class=yazi.floating" "-e" "/home/linuxbrew/.linuxbrew/bin/yazi"; }
     Mod+Space hotkey-overlay-title="Application Launcher" { spawn "vicinae" "toggle"; }
     Mod+V hotkey-overlay-title="Clipboar History" { spawn "vicinae" "vicinae://extensions/vicinae/clipboard/history"; }
     Mod+Escape hotkey-overlay-title="Power Management" { spawn "vicinae" "vicinae://extensions/vicinae/power"; }

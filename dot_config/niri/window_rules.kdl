@@ -18,20 +18,30 @@ window-rule {
 }
 
 window-rule {
+    match app-id=r#"^yazi\.floating$"#
+    open-floating true
+    default-column-width { fixed 1600; }
+    default-window-height { fixed 800; }
+}
+
+// Open steam secondary windows eg. Friends, Settings,... as floating windows
+window-rule {
     match app-id="steam"
     open-on-output "LG Electronics LG ULTRAGEAR 305MAZV8YU3"
     open-floating true
 }
 
+// Open the main steam app maximized on main monitor
 window-rule {
-    match title="^Steam$" app-id="steam"
+    match title=r#"^Steam$"# app-id="steam"
     open-maximized true
     open-floating false
     open-on-output "LG Electronics LG ULTRAGEAR 305MAZV8YU3"
 }
 
+// Open steam games on fullscreen, main monitor
 window-rule{
-    match app-id=r"^steam_app_[0-9]+$"
+    match app-id=r#"^steam_app_[0-9]+$"#
     open-on-output "LG Electronics LG ULTRAGEAR 305MAZV8YU3"
     open-fullscreen true
 }
