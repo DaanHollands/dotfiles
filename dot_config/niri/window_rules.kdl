@@ -39,6 +39,14 @@ window-rule {
     open-on-output "LG Electronics LG ULTRAGEAR 305MAZV8YU3"
 }
 
+// Open heroic maximized on main monitor
+window-rule {
+    match app-id="heroic"
+    open-maximized true
+    open-floating false
+    open-on-output "LG Electronics LG ULTRAGEAR 305MAZV8YU3"
+}
+
 // Open steam games on fullscreen, main monitor
 window-rule{
     match app-id=r#"^steam_app_[0-9]+$"#
