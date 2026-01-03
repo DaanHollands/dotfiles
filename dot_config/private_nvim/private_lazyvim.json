@@ -8,7 +8,6 @@
     "lazyvim.plugins.extras.editor.fzf",
     "lazyvim.plugins.extras.editor.illuminate",
     "lazyvim.plugins.extras.editor.mini-files",
-    "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.tex",
     "lazyvim.plugins.extras.ui.indent-blankline",
     "lazyvim.plugins.extras.util.chezmoi",
