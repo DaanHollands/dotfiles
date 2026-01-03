@@ -24,6 +24,13 @@ window-rule {
     default-window-height { fixed 800; }
 }
 
+window-rule {
+  match app-id=r#"^wiremix.floating$"#
+  open-floating true
+  default-column-width { fixed 800; }
+  default-window-height { fixed 600; }
+}
+
 // Open steam secondary windows eg. Friends, Settings,... as floating windows
 window-rule {
     match app-id="steam"

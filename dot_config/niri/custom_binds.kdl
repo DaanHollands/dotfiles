@@ -28,6 +28,7 @@ binds {
     Mod+Space hotkey-overlay-title="Application Launcher" { spawn "vicinae" "toggle"; }
     Mod+V hotkey-overlay-title="Clipboar History" { spawn "vicinae" "vicinae://extensions/vicinae/clipboard/history"; }
     Mod+Escape hotkey-overlay-title="Power Management" { spawn "vicinae" "vicinae://extensions/vicinae/power"; }
+    Mod+E hotkey-overlay-title="Volume Mixer" { spawn "ghostty" "--class=wiremix.floating" "-e" "/usr/bin/wiremix"; }
 
     // Overwrites from dms
     Mod+T hotkey-overlay-title=null { spawn ""; }
