@@ -17,6 +17,7 @@ window-rule {
     open-floating true
 }
 
+// Window Rules for floating TUI's
 window-rule {
     match app-id=r#"^yazi\.floating$"#
     open-floating true
@@ -43,13 +44,6 @@ window-rule {
     match title=r#"^Steam$"# app-id="steam"
     open-maximized true
     open-floating false
-    open-on-output "LG Electronics LG ULTRAGEAR 305MAZV8YU3"
-}
-
-// Open XIVLauncher in floating window
-window-rule {
-    match app-id=r"^XIVLauncher.Core$"
-    open-floating true
     open-on-output "LG Electronics LG ULTRAGEAR 305MAZV8YU3"
 }
 
