@@ -46,6 +46,13 @@ window-rule {
     open-on-output "LG Electronics LG ULTRAGEAR 305MAZV8YU3"
 }
 
+// Open XIVLauncher in floating window
+window-rule {
+    match app-id=r"^XIVLauncher.Core$"
+    open-floating true
+    open-on-output "LG Electronics LG ULTRAGEAR 305MAZV8YU3"
+}
+
 // Open heroic maximized on main monitor
 window-rule {
     match app-id="heroic"
