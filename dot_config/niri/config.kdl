@@ -216,6 +216,10 @@ animations {
     // slowdown 3.0
 }
 
+cursor {
+    xcursor-theme "Bibata-Modern-Ice"
+}
+
 debug {
     honor-xdg-activation-with-invalid-serial
 }
