@@ -67,9 +67,16 @@ window-rule {
 }
 
 // Open steam games on fullscreen, main monitor
-window-rule{
+window-rule {
     match app-id=r#"^steam_app_[0-9]+"#
     open-on-output "LG Electronics LG ULTRAGEAR 305MAZV8YU3"
-    open-fullscreen true
+    open-maximized-to-edges true
     open-floating false
+}
+
+window-rule {
+    match app-id=r#"^gamescope$"#
+    open-on-output "LG Electronics LG ULTRAGEAR 305MAZV8YU3"
+    open-floating false
+    open-fullscreen true
 }

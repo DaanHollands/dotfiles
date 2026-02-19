@@ -234,3 +234,5 @@ include "dms/alttab.kdl"
 include "dms/binds.kdl"
 
 include "custom_binds.kdl"
+
+include "dms/outputs.kdl"
