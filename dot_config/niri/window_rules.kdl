@@ -19,7 +19,7 @@ window-rule {
 
 // Window Rules for floating TUI's
 window-rule {
-    match app-id=r#"^yazi\.floating$"#
+    match app-id=r#"floating$"#
     open-floating true
     default-column-width { fixed 1600; }
     default-window-height { fixed 800; }

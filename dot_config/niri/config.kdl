@@ -5,7 +5,7 @@
 
 spawn-sh-at-startup "dms run"
 spawn-sh-at-startup "vicinae server"
-spawn-at-startup "kded6"
+spawn-at-startup "sleep 2; kded6"
 
 // Input device configuration.
 // Find the full list of options on the wiki:
@@ -225,14 +225,13 @@ debug {
     honor-xdg-activation-with-invalid-serial
 }
 
-include "outputs.kdl"
-include "window_rules.kdl"
 
 include "dms/colors.kdl"
 include "dms/layout.kdl"
 include "dms/alttab.kdl"
 include "dms/binds.kdl"
-
-include "custom_binds.kdl"
-
 include "dms/outputs.kdl"
+
+include "window_rules.kdl"
+include "outputs.kdl"
+include "custom_binds.kdl"
