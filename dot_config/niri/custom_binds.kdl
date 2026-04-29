@@ -24,10 +24,11 @@ binds {
 
     // Application Shortcuts
     Mod+Return hotkey-overlay-title="Spawn Terminal: Ghostty" { spawn "ghostty"; }
+    Mod+Shift+Return hotkey-overlay-title="Spawn Terminal: Ghostty - Arch" { spawn "ghostty" "-e" "distrobox-enter" "arch"; }
     Mod+D hotkey-overlay-title="Spawn File Manager: Yazi" { spawn "ghostty" "--class=yazi.floating" "-e" "/home/linuxbrew/.linuxbrew/bin/yazi"; }
     Mod+Space hotkey-overlay-title="Application Launcher" { spawn "vicinae" "toggle"; }
     Mod+V hotkey-overlay-title="Clipboar History" { spawn "vicinae" "vicinae://extensions/vicinae/clipboard/history"; }
-    Mod+Escape hotkey-overlay-title="Power Management" { spawn "vicinae" "vicinae://extensions/vicinae/power"; }
+    Mod+Escape hotkey-overlay-title="Power Management" { spawn "vicinae" "vicinae://launch/power"; }
     Mod+E hotkey-overlay-title="Volume Mixer" { spawn "ghostty" "--class=wiremix.floating" "-e" "/usr/bin/wiremix"; }
     Mod+M hotkey-overlay-title="Task Manager: btop" { spawn "ghostty" "--class=btop.floating" "-e" "/usr/bin/btop"; }
 
