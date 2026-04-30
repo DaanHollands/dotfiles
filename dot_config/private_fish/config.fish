@@ -2,6 +2,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+set --global fish_key_bindings fish_default_key_bindings
+
 alias cd='z'
 
 alias ls='eza -al --color=always --group-directories-first --icons=always' # preferred listing
