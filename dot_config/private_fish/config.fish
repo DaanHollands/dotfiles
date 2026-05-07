@@ -12,6 +12,8 @@ alias ll='eza -l --color=always --group-directories-first --icons=always' # long
 alias lt='eza -aT --color=always --group-directories-first --icons=always' # tree listing
 alias l.="eza -a | grep -e '^\.'" # show only dotfiles
 
+alias cz='chezmoi'
+
 # End of file
 zoxide init fish | source
 but completions fish | source
