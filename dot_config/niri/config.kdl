@@ -6,6 +6,7 @@
 spawn-sh-at-startup "dms run"
 spawn-sh-at-startup "vicinae server"
 spawn-at-startup "sleep 2; kded6"
+spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP=niri"
 
 // Input device configuration.
 // Find the full list of options on the wiki:
