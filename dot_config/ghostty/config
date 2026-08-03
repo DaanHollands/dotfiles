@@ -17,6 +17,6 @@ cursor-style = "block"
 cursor-style-blink = false
 shell-integration-features = no-cursor
 
-theme = dark:Gruvbox Material,light:Gruvbox Material Light
+theme = dark:gruvbox-material-hard-dark,light:gruvbox-material-hard-light
 
 command = fish
